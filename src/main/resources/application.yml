@@ -1,0 +1,24 @@
+security:
+  encryption:
+    des:
+      name: DES
+      config: DES/ECB/PKCS5Padding
+
+    aes:
+      name: AES
+      config: AES/GCM/PKCS5Padding
+
+    rc4:
+      name: RSA
+      config: RSA/ECB/PKCS5Padding
+
+  datasource:
+    username: sa
+    password: Marhera1
+    url: jdbc:sqlserver://localhost:1443;databaseName=Passwords;userName=${security.datasource.username};password=${security.datasource.password}
+
+secrets:
+  keys:
+    DES: asd\f3df
+    AES: g\dfadfs
+    RSA: sdfIdsdf
